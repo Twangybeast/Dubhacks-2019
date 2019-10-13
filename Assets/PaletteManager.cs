@@ -13,7 +13,8 @@ public class PaletteManager : MonoBehaviour
     private int currentIndex = 0;
     private bool refreshing = false;
 
-    const string NEW_DOCS_URL = "BigEyeQueue.space/palettelist.json";
+    //const string NEW_DOCS_URL = "BigEyeQueue.space/palettelist.json";
+    const string NEW_DOCS_URL = "https://dubhack-9a202.web.app/palettelist.json";
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,8 @@ public class PaletteManager : MonoBehaviour
 
     public IEnumerator RefreshPalette()
     {
+        Debug.Log("Refreshing palette...");
+        Debug.Log(NEW_DOCS_URL);
         WWW www = new WWW(NEW_DOCS_URL);
         yield return www;
         if (www.error == null)
@@ -48,6 +51,7 @@ public class PaletteManager : MonoBehaviour
                 var item = jsonObject[i];
                 Document document = new Document();
                 document.labelText = item["name"];
+                Debug.Log("Received: " + document.labelText);
                 document.mediaPath = DownloadImage(item["url"]);
                 paletteDocuments.Add(document);
             }
@@ -64,7 +68,6 @@ public class PaletteManager : MonoBehaviour
     {
         string filePath =  "%USERPROFILE%\\Pictures\\"+ System.Guid.NewGuid() + ".png";
         filePath = System.Environment.ExpandEnvironmentVariables(filePath);
-        Debug.Log(filePath);
         using (WebClient webClient = new WebClient())
         {
             webClient.DownloadFile(url, filePath);
@@ -80,7 +83,7 @@ public class PaletteManager : MonoBehaviour
         for (; i < 6; i++)
         {
             int docIndex = i + (2 * currentIndex);
-            if (docIndex >= paletteDocuments.Capacity)
+            if (docIndex >= paletteDocuments.Count)
             {
                 break;
             }
@@ -89,6 +92,7 @@ public class PaletteManager : MonoBehaviour
             paletteButtons[i].transform.Find("IconAndText").Find("TextMeshPro").gameObject.GetComponent<TextMeshPro>().text = doc.labelText;
             paletteButtons[i].GetComponent<DocumentSpawnButton>().mediaPath = doc.mediaPath;
             paletteButtons[i].GetComponent<DocumentSpawnButton>().docLabel = doc.labelText;
+            paletteButtons[i].GetComponent<DocumentSpawnButton>().docPaletteIndex = docIndex;
 
         }
         for (; i < 6; i++)
@@ -104,13 +108,16 @@ public class PaletteManager : MonoBehaviour
         {
             currentIndex = MaxIndex();
         }
+        RenderPalette();
     }
     public void ScrollDown()
     {
-        if (currentIndex-- == 0)
+        currentIndex--;
+        if (currentIndex < 0)
         {
             currentIndex = 0;
         }
+        RenderPalette();
     }
 
     int MaxIndex()
@@ -121,6 +128,12 @@ public class PaletteManager : MonoBehaviour
     public void AddDocument(Document doc)
     {
         paletteDocuments.Add(doc);
+        RenderPalette();
+    }
+
+    public void DeleteDocument(int index)
+    {
+        paletteDocuments.RemoveAt(index);
         RenderPalette();
     }
 }

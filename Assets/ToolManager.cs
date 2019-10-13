@@ -7,7 +7,13 @@ public class ToolManager : MonoBehaviour
 {
     public GameObject currentDoc = null;
     public GameObject docLabel;
+    private DocumentManager documentManager;
     private TouchScreenKeyboard keyboard = null;
+
+    void Awake()
+    {
+        documentManager = GameObject.Find("Documents").GetComponent<DocumentManager>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -19,16 +25,19 @@ public class ToolManager : MonoBehaviour
     {
         if (keyboard != null && currentDoc != null)
         {
-            SetText(keyboard.text);
-            currentDoc.GetComponent<DocumentComponent>().docLabel = keyboard.text;
-            currentDoc.GetComponent<DocumentComponent>().RefreshText();
+            if (keyboard.done)
+            {
+                SetText(keyboard.text);
+                currentDoc.GetComponent<DocumentComponent>().UpdateText(keyboard.text);
+                keyboard = null;
+            }
         }
     }
 
     public void SetDocument(GameObject doc)
     {
         currentDoc = doc;
-        SetText(doc.GetComponent<DocumentComponent>().docLabel);
+        SetText(doc.GetComponent<DocumentComponent>().GetText());
     }
 
     void SetText(string text)
@@ -50,8 +59,8 @@ public class ToolManager : MonoBehaviour
         if (currentDoc != null)
         {
             Document doc = new Document();
-            doc.labelText = currentDoc.GetComponent<DocumentComponent>().docLabel;
-            doc.mediaPath = currentDoc.GetComponent<DocumentComponent>().mediaPath;
+            doc.labelText = currentDoc.GetComponent<DocumentComponent>().GetText();
+            doc.mediaPath = currentDoc.GetComponent<DocumentComponent>().GetMedia();
             GameObject.Find("PaletteMenu").GetComponent<PaletteManager>().AddDocument(doc);
         }
     }
@@ -60,7 +69,7 @@ public class ToolManager : MonoBehaviour
     {
         if (currentDoc != null)
         {
-            Destroy(currentDoc);
+            documentManager.DestroyDocument(currentDoc);
             currentDoc = null;
             SetText("");
         }

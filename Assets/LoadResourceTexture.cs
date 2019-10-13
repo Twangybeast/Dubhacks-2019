@@ -5,27 +5,28 @@ using UnityEngine.UI;
 
 public class LoadResourceTexture : MonoBehaviour
 {
-    public string imagePath = null;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LoadTexture());
+
     }
 
-    IEnumerator LoadTexture()
+    public void PrepareTexture(string imagePath)
+    {
+        StartCoroutine(LoadTexture(imagePath));
+    }
+
+    IEnumerator LoadTexture(string imagePath)
     {
         Texture2D texture = new Texture2D(4, 4, TextureFormat.DXT1, false); ;
         if (imagePath == null || imagePath == "")
         {
-            texture = Resources.Load(imagePath) as Texture2D;
+            imagePath = System.Environment.ExpandEnvironmentVariables("%USERPROFILE%\\Pictures\\" + "BaseImage.png"); 
         }
-        else
+        using (WWW www = new WWW(imagePath))
         {
-            using (WWW www = new WWW(imagePath))
-            {
-                yield return www;
-                www.LoadImageIntoTexture(texture);
-            }
+            yield return www;
+            www.LoadImageIntoTexture(texture);
         }
         gameObject.GetComponent<RawImage>().texture = texture;
         float ratio = (float)texture.width / texture.height;

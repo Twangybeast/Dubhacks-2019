@@ -3681,8 +3681,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 575139634}
-          m_MethodName: OnPress
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3724,13 +3724,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 575139634}
+            m_MethodName: OnPress
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -3917,6 +3916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediaPath: 
   docLabel: 
+  docPaletteIndex: -1
 --- !u!1 &586547243
 GameObject:
   m_ObjectHideFlags: 0
@@ -5259,8 +5259,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 716736267}
-          m_MethodName: OnPress
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5302,13 +5302,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 716736267}
+            m_MethodName: OnPress
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -5495,6 +5494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediaPath: 
   docLabel: 
+  docPaletteIndex: -1
 --- !u!1 &734584306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6246,7 +6246,7 @@ MonoBehaviour:
   startDimensionIndex: 0
   CanSelect: 0
   CanDeselect: 0
-  VoiceCommand: Select
+  VoiceCommand: 
   voiceRequiresFocus: 1
   profiles:
   - Target: {fileID: 1122287471}
@@ -7545,8 +7545,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 987971301}
-          m_MethodName: OnPress
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7588,13 +7588,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 987971301}
+            m_MethodName: OnPress
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -7781,6 +7780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediaPath: 
   docLabel: 
+  docPaletteIndex: -1
 --- !u!1 &1029903638
 GameObject:
   m_ObjectHideFlags: 0
@@ -8886,7 +8886,7 @@ MonoBehaviour:
   startDimensionIndex: 0
   CanSelect: 0
   CanDeselect: 0
-  VoiceCommand: Select
+  VoiceCommand: 
   voiceRequiresFocus: 1
   profiles:
   - Target: {fileID: 1327099006}
@@ -9063,8 +9063,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4650336334823415537}
-          m_MethodName: ScrollUp
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9106,13 +9106,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 4650336334823415537}
+            m_MethodName: ScrollDown
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -9346,7 +9345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 7e7c962b9eb9dfa44993d5b2f2576752, type: 2}
+  activeProfile: {fileID: 11400000, guid: d5765ea7d71818642b5a497e088ae86d, type: 2}
 --- !u!4 &1206697553
 Transform:
   m_ObjectHideFlags: 0
@@ -10687,8 +10686,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1369314719}
-          m_MethodName: OnPress
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10730,13 +10729,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 1369314719}
+            m_MethodName: OnPress
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -10923,6 +10921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediaPath: 
   docLabel: 
+  docPaletteIndex: -1
 --- !u!1 &1374103910
 GameObject:
   m_ObjectHideFlags: 0
@@ -11571,8 +11570,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4650336334823415537}
-          m_MethodName: ScrollDown
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11614,13 +11613,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 4650336334823415537}
+            m_MethodName: ScrollUp
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -12842,8 +12840,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1557639887}
-          m_MethodName: OnPress
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12885,13 +12883,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 1557639887}
+            m_MethodName: OnPress
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -13078,6 +13075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediaPath: 
   docLabel: 
+  docPaletteIndex: -1
 --- !u!1 &1579743691
 GameObject:
   m_ObjectHideFlags: 0
@@ -13504,6 +13502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PressableButtonHoloLens2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2204069621426241315, guid: 3f1f46cbecbe08e46a303ccfdb5b498a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2204069623020599746, guid: 3f1f46cbecbe08e46a303ccfdb5b498a,
         type: 3}
@@ -15681,6 +15684,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1857175700}
+  - component: {fileID: 1857175701}
+  - component: {fileID: 1857175702}
   m_Layer: 0
   m_Name: Documents
   m_TagString: Untagged
@@ -15703,6 +15708,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857175701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857175699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db07ae1eb3dca94f96f3594573cee15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  documentManager: {fileID: 0}
+--- !u!114 &1857175702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857175699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17e4e70a3d0b7d4ca3e15b25cd19d52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultDocumentPrototype: {fileID: 2373059096419899332, guid: 23ca7d7821ab3c14392b58431971ecc6,
+    type: 3}
+  documentRoot: {fileID: 1857175699}
 --- !u!1 &1860297931
 GameObject:
   m_ObjectHideFlags: 0
@@ -16055,8 +16088,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4650336334823415537}
-          m_MethodName: RefreshPaletteClick
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -16098,13 +16131,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 4650336334823415537}
+            m_MethodName: RefreshPaletteClick
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 2100000, guid: 53ea63593b32415faf734536616f5fb3,
-                type: 2}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -17285,7 +17317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2118547702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17958,8 +17990,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4650336336059123680}
-          m_MethodName: OnPress
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -18001,13 +18033,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 4650336336059123680}
+            m_MethodName: OnPress
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -18244,8 +18275,8 @@ MonoBehaviour:
   - Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4650336334894879510}
-          m_MethodName: DuplicateDocument
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -18287,13 +18318,12 @@ MonoBehaviour:
       EventValue:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_MethodName: 
-            m_Mode: 2
+          - m_Target: {fileID: 4650336334894879510}
+            m_MethodName: DuplicateDocument
+            m_Mode: 1
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1,
-                type: 3}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -18785,7 +18815,97 @@ MonoBehaviour:
       Label: Interaction Filter
       Name: InteractionFilter
       Tooltip: Specify whether press event is for near or far interaction
-      IntValue: 2
+      IntValue: 0
+      StringValue: 
+      FloatValue: 0
+      BoolValue: 0
+      GameObjectValue: {fileID: 0}
+      ScriptableObjectValue: {fileID: 0}
+      ObjectValue: {fileID: 0}
+      MaterialValue: {fileID: 0}
+      TextureValue: {fileID: 0}
+      ColorValue: {r: 0, g: 0, b: 0, a: 0}
+      Vector2Value: {x: 0, y: 0}
+      Vector3Value: {x: 0, y: 0, z: 0}
+      Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      CurveValue:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      AudioClipValue: {fileID: 0}
+      QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+      EventValue:
+        m_PersistentCalls:
+          m_Calls: []
+      Options:
+      - Near and Far
+      - Near Only
+      - Far Only
+  - Event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ClassName: InteractableOnPressReceiver
+    AssemblyQualifiedName: Microsoft.MixedReality.Toolkit.UI.InteractableOnPressReceiver,
+      Microsoft.MixedReality.Toolkit.SDK
+    Settings:
+    - Type: 18
+      Label: On Release
+      Name: OnRelease
+      Tooltip: The button is released
+      IntValue: 0
+      StringValue: 
+      FloatValue: 0
+      BoolValue: 0
+      GameObjectValue: {fileID: 0}
+      ScriptableObjectValue: {fileID: 0}
+      ObjectValue: {fileID: 0}
+      MaterialValue: {fileID: 0}
+      TextureValue: {fileID: 0}
+      ColorValue: {r: 0, g: 0, b: 0, a: 0}
+      Vector2Value: {x: 0, y: 0}
+      Vector3Value: {x: 0, y: 0, z: 0}
+      Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+      CurveValue:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      AudioClipValue: {fileID: 0}
+      QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+      EventValue:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1857175701}
+            m_MethodName: Save
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      Options: []
+    - Type: 5
+      Label: Interaction Filter
+      Name: InteractionFilter
+      Tooltip: Specify whether press event is for near or far interaction
+      IntValue: 0
       StringValue: 
       FloatValue: 0
       BoolValue: 0
@@ -22084,6 +22204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediaPath: 
   docLabel: 
+  docPaletteIndex: -1
 --- !u!65 &4650336336174918113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24789,6 +24910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DefaultItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373059096419899332, guid: 23ca7d7821ab3c14392b58431971ecc6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2373059096419899387, guid: 23ca7d7821ab3c14392b58431971ecc6,
         type: 3}

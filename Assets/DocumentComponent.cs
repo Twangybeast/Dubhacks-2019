@@ -8,11 +8,11 @@ public class DocumentComponent : MonoBehaviour, IMixedRealityPointerHandler
 {
     private GameObject mediaObject = null;
     private GameObject textObject = null;
-    public string docLabel = "";
-    public string mediaPath = "";
+    private string docLabel = "BaseImage";
+    private string mediaPath = "";
     private GameObject toolMenu = null;
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         if (mediaObject == null)
         {
@@ -20,9 +20,37 @@ public class DocumentComponent : MonoBehaviour, IMixedRealityPointerHandler
             textObject = gameObject.transform.Find("DocumentLabel").gameObject;
             toolMenu = GameObject.Find("ToolMenu").gameObject;
         }
+    }
 
+    // Start is called before the first frame update
+    void Start()
+    {
         RefreshText();
-        mediaObject.GetComponent<LoadResourceTexture>().imagePath = mediaPath;
+        mediaObject.GetComponent<LoadResourceTexture>().PrepareTexture(mediaPath);
+    }
+
+
+
+    public string GetText()
+    {
+        return docLabel;
+    }
+
+    public string GetMedia()
+    {
+        return mediaPath;
+    }
+
+    public void UpdateText(string docLabel)
+    {
+        this.docLabel = docLabel;
+        RefreshText();
+    }
+
+    public void SetData(string docLabel, string mediaPath)
+    {
+        this.docLabel = docLabel;
+        this.mediaPath = mediaPath;
     }
 
     public void RefreshText()

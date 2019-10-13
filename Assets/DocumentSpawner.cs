@@ -6,6 +6,8 @@ using UnityEngine.Events;
 
 public class DocumentSpawner : MonoBehaviour
 {
+    DocumentManager documentManager = null;
+
     public GameObject documentPrototype;
     public Vector3 defaultDocumentLocation;
     public Quaternion defaultDocumentOrientation = Quaternion.identity;
@@ -14,7 +16,10 @@ public class DocumentSpawner : MonoBehaviour
     void Awake()
     {
         if (documentRoot == null)
+        {
             documentRoot = GameObject.Find("Documents");
+            documentManager = GameObject.Find("Documents").GetComponent<DocumentManager>();
+        }
     }
 
     // Start is called before the first frame update
@@ -35,9 +40,8 @@ public class DocumentSpawner : MonoBehaviour
         {
             docLabel = "New Document";
         }
-        GameObject documentObject = Instantiate(documentPrototype, defaultDocumentLocation, defaultDocumentOrientation, documentRoot.transform);
-        DocumentComponent document = documentObject.GetComponent<DocumentComponent>();
-        document.docLabel = docLabel;
-        document.mediaPath = mediaPath;
+        documentManager.CreateDocument(mediaPath, docLabel, documentPrototype, defaultDocumentLocation,
+            defaultDocumentOrientation, documentRoot);
+        
     }
 }
